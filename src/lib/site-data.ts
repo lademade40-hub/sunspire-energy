@@ -422,5 +422,5 @@ export const FOOTER_LINKS: { title: string; items: { label: string; page?: PageK
 
 export const DESIGNED_BY = {
   label: "Designed By Emnex AI",
-  href: "https://emnexaif.space-z.ai/",
+  href: "https://emnexaii.space-z.ai/#contact",
 };

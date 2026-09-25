@@ -32,3 +32,19 @@ Work Log:
 
 Stage Summary:
 - Website complete and browser verified; ready for delivery
+
+---
+Task ID: 3
+Agent: main (Super Z)
+Task: Update footer "Designed By Emnex AI" link destination to https://emnexaii.space-z.ai/#contact
+
+Work Log:
+- Located DESIGNED_BY constant in src/lib/site-data.ts (line 423)
+- Changed href from https://emnexaif.space-z.ai/ to https://emnexaii.space-z.ai/#contact
+- Kept label "Designed By Emnex AI", target _blank, URL hidden behind anchor text
+- Ran bun run lint (clean), confirmed dev server 200 response
+- Verified via agent-browser DOM: footer anchor href = https://emnexaii.space-z.ai/#contact
+- Screenshot of footer confirms rendering unchanged
+
+Stage Summary:
+- Footer credit now sends visitors to https://emnexaii.space-z.ai/#contact when clicked
