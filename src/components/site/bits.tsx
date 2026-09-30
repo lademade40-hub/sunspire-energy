@@ -108,9 +108,14 @@ export function Reveal({
   className?: string;
   as?: "div" | "section" | "article" | "li" | "span";
 }) {
-  const ref = useReveal<HTMLDivElement>(delay);
+  const ref = useReveal<HTMLElement>(delay);
   return (
-    <Tag ref={ref as React.RefObject<HTMLDivElement>} className={className}>
+    <Tag
+      ref={(node: HTMLElement | null) => {
+        ref.current = node;
+      }}
+      className={className}
+    >
       {children}
     </Tag>
   );

@@ -52,3 +52,18 @@ prompt
 server.log
 # Skills directory
 /skills/
+
+# Sandbox workspace only (not part of the website)
+.env
+/.zscripts/
+/scripts/
+/download/
+/upload/
+/examples/
+/mini-services/
+/db/
+/tests/
+/worklog.md
+/Caddyfile
+/agent-ctx/
+/vercel-build-check/
